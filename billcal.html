@@ -1,0 +1,167 @@
+<html>
+<style>
+.vg,.pn,.kj,.cl,.cd{
+    float: right;     
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 15 px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+
+
+</style>
+<div class="row">
+     <div class="column" id="c1">  
+<form>
+    <table>
+    <tr><td><p style="text-align: center;">vegetables</p></td></tr>
+	<tr><td><input type="checkbox" name="vegetables" value="Mix Veg">Mix Veg<input type="text" name="quantity" class="vg"></td></tr>
+	<tr><td><input type="checkbox" name="vegetables" value="Chana Masala">Chana Masala<input type="text" name="quantity" class="vg"></td></tr>
+	<tr><td><input type="checkbox" name="vegetables" value="Veg Jaypuri">Veg Jaypuri<input type="text" name="quantity" class="vg"></td></tr>
+	<tr><td><input type="checkbox" name="vegetables" value="Veg Handi">Veg Handi<input type="text" name="quantity" class="vg"></td></tr>
+    <tr><td><input type="checkbox" name="vegetables" value="Veg Makhanwala">Veg Makhanwala<input type="text" name="quantity" class="vg"></td></tr>
+    <tr><td><input type="checkbox" name="vegetables" value="Veg Lasaniya">Veg Lasaniya<input type="text" name="quantity" class="vg"></td></tr>
+    <tr><td><input type="checkbox" name="vegetables" value="Veg Kadai">Veg Kadai<input type="text" name="quantity" class="vg"></td></tr>
+    <tr><td><input type="checkbox" name="vegetables" value="Veg Balti">Veg Balti<input type="text" name="quantity" class="vg"></td></tr>
+    </table>
+</form>
+</div>
+<div class="column">
+<form>
+    <table>
+    <tr><td><p style="text-align: center;">Paneer</p></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer capsicum">Paneer capsicum<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Tikka Masala">Paneer Tikka Masala<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Butter Masala">Paneer Butter Masala<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Jaypuri">Paneer Jaypuri<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Bhurji">Paneer Bhurji<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Kadai">Paneer Kadai<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer handi">Paneer handi<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Tufani">Paneer Tufani<input type="text" name="quantity" class="pn"></td></tr>
+    <tr><td><input type="checkbox" name="paneer" value="Paneer Balti">Paneer Balti<input type="text" name="quantity" class="pn"></td></tr>
+    </table>
+</form>  
+
+</div>
+<div class="column">
+<form>
+    <table>
+    <tr><td><p style="text-align: center;">Kaju</p></td></tr>    
+    <tr><td><input type="checkbox" name="Kaju" value="Kaju Kari">Kaju Kari<input type="text" name="quantity" class="kj"></td></tr>
+    <tr><td><input type="checkbox" name="Kaju" value="Kaju Butter Masala">Kaju Butter Masala<input type="text" name="quantity" class="kj"></td></tr>
+    <tr><td><input type="checkbox" name="Kaju" value="Koya Kaju">Koya Kaju<input type="text" name="quantity" class="kj"></td></tr>
+    <tr><td><input type="checkbox" name="Kaju" value="Kaju Paneer Masala">Kaju Paneer Masala<input type="text" name="quantity" class="kj"></td></tr>
+</table>
+</form> 
+</div>
+</div>
+<div class="row">
+<div class="column">
+<form>
+    <table>
+    <tr><td><p style="text-align: center;">Rice</p></td></tr>    
+    <tr><td><input type="checkbox" name="Closer" value="Steam Rice">Steam Rice<input type="text" name="quantity" class="cl"></td></tr>
+    <tr><td><input type="checkbox" name="Closer" value="Jeera Rice">Jeera Rice<input type="text" name="quantity" class="cl"></td></tr>
+    <tr><td><input type="checkbox" name="Closer" value="Dal Fry">Dal Fry<input type="text" name="quantity" class="cl"></td></tr>
+    <tr><td><input type="checkbox" name="Closer" value="Dal Tadka">Dal Tadka<input type="text" name="quantity" class="cl"></td></tr>
+    <tr><td><input type="checkbox" name="Closer" value="Pulav">Pulav<input type="text" name="quantity"class="cl"></td></tr>
+    </table>
+</form>
+</div>
+<div class="column">
+<form>
+    <table>
+     <tr><td><p style="text-align: center;">Cold Drinks</p></td></tr>   
+     <tr><td><input type="checkbox" name="cold drinks" value="cold drink">cold drink<input type="text" name="quantity" class="cd"></tr></td>
+     <tr><td><input type="checkbox" name="cold drinks" value="Mineral Water">Mineral Water<input type="text" name="quantity" class="cd"></tr></td>
+     <tr><td><input type="checkbox" name="cold drinks" value="Butter Milk">Butter Milk<input type="text" name="quantity" class="cd"></tr></td>
+    </table>
+</form>   
+</div>
+</div>
+
+<button onclick="cal()">Calculate</button>
+<p id="bill"></p>
+<p id="total" style="text-align:left;"></p>
+
+</html>
+<script type="text/javascript">
+	var vegetables=[80,90,100,110,120,130,140,150];
+    var paneer=[50,60,70,80,90,100,120,130,140];
+    var kaju=[100,110,120,1300];
+    var colddrnks=[15,15,10];
+    var closer=[40,50,60,70,80];
+    
+function cal(){
+	 var x = document.forms[0];
+     var y = document.forms[1];
+     var z = document.forms[2];
+     var w = document.forms[3];
+     var p = document.forms[4];
+    var sum1=0;
+    var sum2=0;
+    var sum3=0;
+    var sum4=0;
+    var sum5=0;
+    var txt="";
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if(i%2==0)
+        {
+            if(x.elements[i].checked)
+            {
+                sum1=sum1 + (x.elements[i+1].value * vegetables[i/2]);
+                txt=txt+ x.elements[i].value + " x" + x.elements[i+1].value +" Rs."+(x.elements[i+1].value * vegetables[i/2]) + "<br>";
+            }
+        }
+    }
+    for(i=0;i<y.length;i++){
+        if(i%2==0)
+        {
+            if(y.elements[i].checked)
+            {
+                sum2=sum2 + (y.elements[i+1].value * paneer[i/2]);
+                txt=txt+ y.elements[i].value + " x" + y.elements[i+1].value +" Rs."+(y.elements[i+1].value * paneer[i/2]) + "<br>";
+            }
+        }
+    }
+    for(i=0;i<z.length;i++){
+        if(i%2==0)
+        {
+            if(z.elements[i].checked)
+            {
+                sum3=sum3 + (z.elements[i+1].value * kaju[i/2]);
+                txt=txt+ z.elements[i].value + " x" + z.elements[i+1].value +" Rs."+(z.elements[i+1].value * kaju[i/2]) + "<br>";
+            }
+        }
+    }
+    for(i=0;i<w.length;i++){
+        if(i%2==0)
+        {
+            if(w.elements[i].checked)
+            {
+                sum4=sum4 + (w.elements[i+1].value * closer[i/2]);
+                txt=txt+ w.elements[i].value + " x" + w.elements[i+1].value +" Rs."+(w.elements[i+1].value * closer[i/2]) + "<br>";
+            }
+        }
+    }
+    for(i=0;i<p.length;i++){
+        if(i%2==0)
+        {
+            if(p.elements[i].checked)
+            {
+                sum5=sum5 + (p.elements[i+1].value * colddrnks[i/2]);
+                txt=txt+ p.elements[i].value + " x" + p.elements[i+1].value +" Rs."+(p.elements[i+1].value * colddrnks[i/2]) + "<br>";
+            }
+        }
+    }   
+  document.getElementById("total").innerHTML = "Total:" +(sum1 + sum2 + sum3 + sum4 + sum5);
+  document.getElementById("bill").innerHTML =txt;
+}
+</script>
